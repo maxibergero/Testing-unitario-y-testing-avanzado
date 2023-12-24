@@ -2,3 +2,11 @@
 [31mfatal[39m: Error en consultar productos: TypeError: prods.each is not a function
 [31mfatal[39m: Error en consultar productos: TypeError: prods.each is not a function
 [31mfatal[39m: Error en consultar productos: TypeError: prods.each is not a function
+[31mfatal[39m: Error en registrar usuario: TypeError: req.logger.degub is not a function
+[31mfatal[39m: Error en registrar usuario: TypeError: req.logger.degub is not a function
+[31mfatal[39m: Error en registrar usuario: TypeError: req.logger.degub is not a function
+[31mfatal[39m: Error en registrar usuario: TypeError: req.logger.degub is not a function
+[31mfatal[39m: Error en registrar usuario: TypeError: req.logger.degub is not a function
+[31mfatal[39m: Error en crear producto llave duplicada: MongoServerError: E11000 duplicate key error collection: test.products index: code_1 dup key: { code: "superTest" }
+[31mfatal[39m: Error en crear producto llave duplicada: MongoServerError: E11000 duplicate key error collection: test.products index: code_1 dup key: { code: "superTest" }
+[31mfatal[39m: Error en crear producto llave duplicada: MongoServerError: E11000 duplicate key error collection: test.products index: code_1 dup key: { code: "supertest" }

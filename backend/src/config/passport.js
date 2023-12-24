@@ -64,7 +64,7 @@ const initializePassport = () => {
 
             try {
                 const user = await userModel.findOne({ email: email })
-                req.logger.degub(`User(register): ${user}`)
+                
                 if (user) {
                     //Caso de error: usuario existe
                     return done(null, false)
@@ -81,11 +81,11 @@ const initializePassport = () => {
                     password: passwordHash
                 })
 
-                req.logger.info(`User(created): ${userCreated}`)
+                
                 return done(null, userCreated)
 
             } catch (error) {
-                req.logger.fatal(`Error en registrar usuario: ${error}`)
+                
                 return done(error)
             }
         }))

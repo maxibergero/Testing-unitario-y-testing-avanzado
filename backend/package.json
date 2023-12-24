@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "test": "mocha 'test/*.mocha.test.js'",
+    "testChai": "mocha 'test/*.chai.test.js'",
+    "supertest": "mocha test/*.supertest.test.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +31,9 @@
     "winston": "^3.11.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
   }
 }

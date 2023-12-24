@@ -5,15 +5,6 @@ export const login = async (req, res) => {
         if (!req.user) {
             return res.status(401).send({ mensaje: "Usuario invalido" })
         }
-        /*
-        Si siguen con sesiones en BDD, esto no se bora. Si usan JWT si
-        req.session.user = {
-            first_name: req.user.first_name,
-            last_name: req.user.last_name,
-            age: req.user.age,
-            email: req.user.email
-            res.status(200).send({mensaje: "Usuario logueado"})
-        }*/
 
         const token = generateToken(req.user)
         req.logger.debug(`Token generado(login): ${token}`)
